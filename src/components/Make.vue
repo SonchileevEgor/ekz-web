@@ -1,5 +1,5 @@
 <template>
-    <p class="v-make text-center">{{this.id}} - {{this.name}}</p>
+    <button @click="openSingleMake()" class="btn btn-primary v-make text-center">{{this.id}} - {{this.name}}</button>
 </template>
 
 <script>
@@ -15,7 +15,8 @@ export default {
 <style>
 .v-make{
     background-color: skyblue;
-    width: 90%;
-    margin-left: 5%;
+    /* width: 90%; */
+    width: 300px;
+    /* margin-left: 5%; */
 }
 </style>

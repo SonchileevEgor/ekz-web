@@ -3,6 +3,7 @@
   <h1>NATIONAL HIGHWAY TRAFFIC SAFETY ADMINISTRATION</h1>
   <div class="card">
     <div class="card-header d-flex justify-content-around">
+        <button @click="getData()" class="btn btn-primary">Get all Makes</button>
         <button @click="lsClear()" class="btn btn-danger">Очистить localStorage</button>
         <input ref="makeId" placeholder="Введите Make_ID" type="number" class="form-control w-25">
         <button @click="getModels()" class="btn btn-primary">Получить данные</button>
@@ -37,8 +38,11 @@ export default {
   name: 'App',
   data() {
     return {
-      allMakes: [],
-      allMakesClear: [],
+      allMakes: {
+      },
+      allMakesClear: {
+      },
+      // allMakesClear: [],
     }
   },
   components: {
@@ -82,7 +86,7 @@ export default {
   },
 
   mounted: function() {
-    this.getData();
+    // this.getData();
   }
 }
 </script>

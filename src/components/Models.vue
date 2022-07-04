@@ -1,8 +1,8 @@
 <template>
     <h3><b>All Models by Make_ID: ({{chosen_make}})</b></h3>
-    <p v-for="model in allModels.Results" :key="model">
-        {{model.Model_Name}}
-    </p>
+        <button class="btn w-100 btn-info" v-for="model in allModels.Results" :key="model">
+            {{model.Model_Name}}
+          </button>
 </template>
 
 <script>
